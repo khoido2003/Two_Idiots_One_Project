@@ -1,0 +1,14 @@
+C:\Users\Lenovo\OneDrive\Desktop\DSA\obj\Debug\net10.0\DSA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\OneDrive\Desktop\DSA\obj\Debug\net10.0\DSA.AssemblyInfoInputs.cache
+C:\Users\Lenovo\OneDrive\Desktop\DSA\obj\Debug\net10.0\DSA.AssemblyInfo.cs
+C:\Users\Lenovo\OneDrive\Desktop\DSA\obj\Debug\net10.0\DSA.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\OneDrive\Desktop\DSA\bin\Debug\net10.0\DSA.exe
+C:\Users\Lenovo\OneDrive\Desktop\DSA\bin\Debug\net10.0\DSA.deps.json
+C:\Users\Lenovo\OneDrive\Desktop\DSA\bin\Debug\net10.0\DSA.runtimeconfig.json
+C:\Users\Lenovo\OneDrive\Desktop\DSA\bin\Debug\net10.0\DSA.dll
+C:\Users\Lenovo\OneDrive\Desktop\DSA\bin\Debug\net10.0\DSA.pdb
+C:\Users\Lenovo\OneDrive\Desktop\DSA\obj\Debug\net10.0\DSA.dll
+C:\Users\Lenovo\OneDrive\Desktop\DSA\obj\Debug\net10.0\refint\DSA.dll
+C:\Users\Lenovo\OneDrive\Desktop\DSA\obj\Debug\net10.0\DSA.pdb
+C:\Users\Lenovo\OneDrive\Desktop\DSA\obj\Debug\net10.0\DSA.genruntimeconfig.cache
+C:\Users\Lenovo\OneDrive\Desktop\DSA\obj\Debug\net10.0\ref\DSA.dll
