@@ -1,7 +1,3 @@
-// Insert
-
-using System.Xml;
-
 namespace DSA.LinkedList
 {
     public class LinkedList
@@ -98,6 +94,39 @@ namespace DSA.LinkedList
             }
 
             return root;
+        }
+
+        public static Node RevertList(Node root)
+        {
+            Node cur = root;
+            Node prev = null;
+            Node next = null;
+
+            while (cur != null)
+            {
+                next = cur.next;
+                cur.next = prev;
+                prev = cur;
+                cur = next;
+            }
+
+            root = prev;
+            return root;
+        }
+
+        public static bool SearchList(Node root, int key)
+        {
+            Node curNode = root;
+            while (curNode != null)
+            {
+                if (curNode.data == key)
+                {
+                    return true;
+                }
+
+                curNode = curNode.next;
+            }
+            return false;
         }
 
         public static void PrintList(Node head)
