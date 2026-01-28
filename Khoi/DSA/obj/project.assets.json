@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Lenovo\\OneDrive\\Desktop\\Two_Idiots_One_Project\\Khoi\\DSA\\DSA.csproj",
+      "projectUniqueName": "e:\\Two_Idiots_One_Project\\Khoi\\DSA\\DSA.csproj",
       "projectName": "DSA",
-      "projectPath": "c:\\Users\\Lenovo\\OneDrive\\Desktop\\Two_Idiots_One_Project\\Khoi\\DSA\\DSA.csproj",
+      "projectPath": "e:\\Two_Idiots_One_Project\\Khoi\\DSA\\DSA.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Lenovo\\OneDrive\\Desktop\\Two_Idiots_One_Project\\Khoi\\DSA\\obj\\",
+      "outputPath": "e:\\Two_Idiots_One_Project\\Khoi\\DSA\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\OneDrive\\Desktop\\Two_Idiots_One_Project\\Khoi\\DSA\\DSA.csproj": {}
+    "E:\\Two_Idiots_One_Project\\Khoi\\DSA\\DSA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\OneDrive\\Desktop\\Two_Idiots_One_Project\\Khoi\\DSA\\DSA.csproj": {
+    "E:\\Two_Idiots_One_Project\\Khoi\\DSA\\DSA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\Two_Idiots_One_Project\\Khoi\\DSA\\DSA.csproj",
+        "projectUniqueName": "E:\\Two_Idiots_One_Project\\Khoi\\DSA\\DSA.csproj",
         "projectName": "DSA",
-        "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\Two_Idiots_One_Project\\Khoi\\DSA\\DSA.csproj",
+        "projectPath": "E:\\Two_Idiots_One_Project\\Khoi\\DSA\\DSA.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\Two_Idiots_One_Project\\Khoi\\DSA\\obj\\",
+        "outputPath": "E:\\Two_Idiots_One_Project\\Khoi\\DSA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
