@@ -31,7 +31,23 @@ for (int i = 0; i <= arr.Length - 1; i++)
 }
 */
 
-BinaryNode root = TreeTheory.BuildTree(arr);
+/////////////////////////////////////////////////////////
+
+BinaryNode root = TreeTheory.BuildBinaryTree(arr);
+
+//TreeTheory.InsertNode(root, 19);
 
 TreeTheory.PrintTreeLevelOrder(root);
-Console.WriteLine(TreeTheory.FindTreeHeight(root));
+
+//TreeTheory.DeleteNode(root, 12);
+//TreeTheory.PrintTreeLevelOrder(root);
+Console.WriteLine();
+
+BinaryNode bstRoot = TreeTheory.BuildBSTTree(arr);
+TreeTheory.PrintTreeLevelOrder(bstRoot);
+
+Console.WriteLine(TreeTheory.SearchBstTree(bstRoot, 24));
+
+// Console.WriteLine(TreeTheory.FindTreeHeight(root));
+// Console.WriteLine(TreeTheory.GetLevelOfNode(root, 8));
+// Console.WriteLine(TreeTheory.GetParentOfNode(root, 8));
