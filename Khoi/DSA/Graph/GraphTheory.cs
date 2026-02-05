@@ -2,6 +2,112 @@ namespace DSA.Graph
 {
     public class GraphTheory
     {
+        // Floyd
+        public static void Floyd(int[,] dist)
+        {
+            int V = dist.GetLength(0);
+
+            for (int k = 0; k < V; k++)
+            {
+                for (int i = i = 0; i < V; i++)
+                {
+                    for (int j = 0; j < V; j++)
+                    {
+                        if (dist[i, k] != 1e8 && dist[k, j] != 1e8)
+                        {
+                            dist[i, j] = Math.Min(dist[i, j], dist[i, k] + dist[k, j]);
+                        }
+                    }
+                }
+            }
+        }
+
+        //////////////////////////////////////////////////////
+
+        // Bellman-Ford
+        public static int[] BellmanFord(int V, (int, int, int)[] edges, int root)
+        {
+            int[] res = new int[V];
+            for (int i = 0; i < res.Length; i++)
+            {
+                res[i] = int.MaxValue;
+            }
+
+            res[root] = 0;
+
+            for (int i = 0; i < V; i++)
+            {
+                for (int j = 0; j < edges.Length; j++)
+                {
+                    int startNode = edges[j].Item1;
+                    int endNode = edges[j].Item2;
+                    int cost = edges[j].Item3;
+
+                    if (res[startNode] != int.MaxValue && res[endNode] > res[startNode] + cost)
+                    {
+                        if (i == V - 1)
+                        {
+                            return new int[] { -1 };
+                        }
+
+                        res[endNode] = res[startNode] + cost;
+                    }
+                }
+            }
+
+            return res;
+        }
+
+        ///////////////////////////////////////////////////////
+
+        // Dijstrak
+        public static List<int> Dijstrak(List<List<(int, int)>> adj)
+        {
+            PriorityQueue<(int, int), int> pq = new();
+            List<int> res = new();
+
+            for (int i = 0; i < adj.Count; i++)
+            {
+                res.Add(int.MaxValue);
+            }
+
+            int root = 0,
+                rootDistance = 0;
+
+            res[0] = rootDistance;
+            pq.Enqueue((root, rootDistance), rootDistance);
+
+            bool[] visited = new bool[adj.Count];
+
+            while (pq.Count > 0)
+            {
+                (int curNode, int curDistance) = pq.Dequeue();
+
+                if (visited[curNode])
+                {
+                    continue;
+                }
+
+                visited[curNode] = true;
+                res[curNode] = curDistance;
+
+                foreach (var neighbor in adj[curNode])
+                {
+                    int newNeighborWeight = neighbor.Item2 + res[curNode];
+                    int curNeighborWeight = res[neighbor.Item1];
+
+                    if (newNeighborWeight < curNeighborWeight)
+                    {
+                        res[neighbor.Item1] = newNeighborWeight;
+                        pq.Enqueue((neighbor.Item1, newNeighborWeight), newNeighborWeight);
+                    }
+                }
+            }
+            return res;
+        }
+
+        //////////////////////////////////////////////////////////
+
         // Detect cycle in undirected graph
         public static bool IsCycle(List<List<int>> adj)
         {

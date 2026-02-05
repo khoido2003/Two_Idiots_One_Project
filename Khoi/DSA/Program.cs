@@ -85,7 +85,7 @@ int[][] mat =
 int cnt = GraphPractice.RottenOrange(mat);
 Console.WriteLine(cnt);
 */
-
+/*
 List<List<int>> adjList = new List<List<int>>
 {
     new List<int> { 2 },
@@ -95,7 +95,8 @@ List<List<int>> adjList = new List<List<int>>
     // new List<int> { 5 },
     //new List<int> { 1, 2 },
 };
-
+*/
+/*
 List<List<int>> adjList2 = new List<List<int>>
 {
     new List<int> { 1 },
@@ -104,7 +105,7 @@ List<List<int>> adjList2 = new List<List<int>>
     new List<int> { 2 },
     //new List<int> { 1, 2 },
 };
-
+*/
 /*
 List<int> res = GraphTheory.TopoSort(adjList);
 
@@ -115,4 +116,52 @@ foreach (var el in res)
 */
 
 //Console.WriteLine(GraphTheory.IsCyclic(adjList));
-Console.WriteLine(GraphTheory.IsCycle(adjList2));
+//Console.WriteLine(GraphTheory.IsCycle(adjList2));
+//
+
+/*
+List<List<(int, int)>> adjList =
+[
+    new() { (1, 4), (2, 8) },
+    new() { (0, 4), (4, 6), (2, 3) },
+    new() { (0, 8), (3, 2), (1, 3) },
+    new() { (2, 2), (4, 10) },
+    new() { (1, 6), (3, 10) },
+];
+
+List<int> res = GraphTheory.Dijstrak(adjList);
+foreach (var el in res)
+{
+    Console.Write(el + " ");
+}
+*/
+
+/*
+(int, int, int)[] edges = [(1, 3, 2), (4, 3, -1), (2, 4, 1), (1, 2, 1), (0, 1, 5)];
+int[] res = GraphTheory.BellmanFord(5, edges, 0);
+
+for (int i = 0; i < res.Length; i++)
+{
+    Console.Write(res[i] + " ");
+}
+*/
+const int INF = 100000000;
+int[,] dist =
+{
+    { 0, 4, INF, 5, INF },
+    { INF, 0, 1, INF, 6 },
+    { 2, INF, 0, 3, INF },
+    { INF, INF, 1, 0, 2 },
+    { 1, INF, INF, 4, 0 },
+};
+
+GraphTheory.Floyd(dist);
+
+for (int i = 0; i < dist.GetLength(0); i++)
+{
+    for (int j = 0; j < dist.GetLength(1); j++)
+    {
+        Console.Write(dist[i, j] + " ");
+    }
+    Console.WriteLine();
+}
