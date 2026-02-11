@@ -145,6 +145,7 @@ for (int i = 0; i < res.Length; i++)
     Console.Write(res[i] + " ");
 }
 */
+/*
 const int INF = 100000000;
 int[,] dist =
 {
@@ -162,6 +163,69 @@ for (int i = 0; i < dist.GetLength(0); i++)
     for (int j = 0; j < dist.GetLength(1); j++)
     {
         Console.Write(dist[i, j] + " ");
+    }
+    Console.WriteLine();
+}
+
+*/
+
+/*
+int[][] edges =
+{
+    new int[] { 0, 1, 10 },
+    new int[] { 1, 3, 15 },
+    new int[] { 2, 3, 4 },
+    new int[] { 2, 0, 6 },
+    new int[] { 0, 3, 5 },
+};
+
+List<int> res = new();
+
+int cost = GraphTheory.KruskalMst(4, edges, out res);
+
+Console.WriteLine(cost);
+foreach (var el in res)
+{
+    Console.Write(el + " ");
+}
+*/
+
+/*
+int[][] edges =
+[
+    [0, 1],
+    [1, 4],
+    [2, 3],
+    [2, 4],
+    [3, 4],
+];
+
+List<int> res = GraphTheory.FindArticulationPointsTarzan(5, edges);
+
+foreach (var el in res)
+{
+    Console.Write(el + " ");
+}
+
+*/
+
+List<List<int>> adjList =
+[
+    new() { 1 },
+    new() { 2 },
+    new() { 0, 3 },
+    new() { 4 },
+    new() { 3, 5 },
+    new() { },
+];
+
+var sccs = GraphTheory.FindSCCs(adjList);
+
+foreach (var scc in sccs)
+{
+    foreach (int x in scc)
+    {
+        Console.Write(x + " ");
     }
     Console.WriteLine();
 }
