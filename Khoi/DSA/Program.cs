@@ -1,10 +1,32 @@
 ﻿using DSA.Graph;
+using DSA.Greedy;
 using DSA.LinkedList;
 using DSA.PrefixSum;
 using DSA.Sort;
 using DSA.Tree;
 
-int[] arr = { 5, 12, 13, 7, 14, 2, 17, 23, 27, 3, 8, 11 };
+int[] arr = { 3, 1, 7, 1 };
+int n = arr.Length;
+
+Console.WriteLine(GreedyTheory.MinElements(arr, n));
+
+/*
+int input = 28756;
+int unlock_code = 98234;
+Console.Write("Minimum Rotation = " + GreedyTheory.MinRotation(input, unlock_code));
+*/
+/*
+int[] val = { 60, 100, 120 };
+int[] wt = { 10, 20, 30 };
+int capacity = 50;
+
+double res = GreedyTheory.FractionalKnapsack(val, wt, capacity);
+Console.WriteLine(res);
+*/
+
+////////////////////////////////////////////////////////////
+
+// int[] arr = { 5, 12, 13, 7, 14, 2, 17, 23, 27, 3, 8, 11 };
 
 // LinkedList.Node root = LinkedList.CreateFromArray(arr);
 // LinkedList.PrintList(root);
@@ -209,6 +231,7 @@ foreach (var el in res)
 
 */
 
+/*
 List<List<int>> adjList =
 [
     new() { 1 },
@@ -229,3 +252,4 @@ foreach (var scc in sccs)
     }
     Console.WriteLine();
 }
+*/
