@@ -1,14 +1,143 @@
-﻿using DSA.Graph;
+﻿using System.Text;
+using DSA.Graph;
 using DSA.Greedy;
 using DSA.LinkedList;
 using DSA.PrefixSum;
 using DSA.Sort;
 using DSA.Tree;
 
+int[] mices = { 4, -4, 2 };
+int[] holes = { 4, 0, 5 };
+
+// The required answer is returned
+// from the function
+int minTime = GreedyTheory.AssignMousesToHoles(mices, holes);
+Console.WriteLine(minTime);
+
+/*
+int wall = 24,
+    m = 3,
+    n = 5;
+var (big, small, remain) = GreedyTheory.FittingShelves(wall, m, n);
+
+Console.WriteLine("Big: " + big + " Small: " + small + " Empty: " + remain);
+var result = GreedyTheory.FittingShelves(24, 3, 5);
+Console.WriteLine(result);
+*/
+
+/*
+int k = 1;
+char[] arr = { 'P', 'T', 'T', 'P', 'T' };
+Console.WriteLine(GreedyTheory.PoliceCatchThieves(arr, k));
+*/
+
+/*
+int nr = 6,
+    dr = 14;
+Console.Write("Egyptian Fraction Representation of " + nr + "/" + dr + " is\n ");
+GreedyTheory.PrintEgyptian(nr, dr);
+*/
+
+/*
+void print2dArray(List<List<int>> arr)
+{
+    Console.Write("[");
+    for (int i = 0; i < arr.Count; i++)
+    {
+        Console.Write("[{0}]", string.Join(", ", arr[i]));
+        if (i != arr.Count - 1)
+        {
+            Console.Write(", ");
+        }
+    }
+    Console.WriteLine("]");
+}
+
+int n = 9,
+    p = 6;
+int[] a = [7, 5, 4, 2, 9, 3];
+int[] b = [4, 9, 6, 8, 7, 1];
+int[] d = [98, 72, 10, 22, 17, 66];
+
+List<List<int>> ans = GreedyTheory.FindWaterDistribution(n, p, a, b, d);
+
+print2dArray(ans);
+*/
+
+/*
+string s = "abcdefg";
+int[] freq = { 5, 9, 12, 13, 16, 45, 6 };
+GreedyTheory.Node root;
+List<string> ans = GreedyTheory.HuffmanCode(s, freq, out root);
+
+for (int i = 0; i < ans.Count; i++)
+{
+    Console.Write(ans[i] + " ");
+}
+Console.WriteLine();
+
+Dictionary<char, string> map = new();
+GreedyTheory.BuildMap(root, "", map);
+
+string text = "face";
+StringBuilder encoded = new();
+
+foreach (char c in text)
+{
+    encoded.Append(map[c]);
+}
+
+Console.WriteLine("Encoded: " + encoded.ToString());
+Console.WriteLine("Decoded: " + GreedyTheory.DecodeHuffman(root, encoded.ToString()));
+*/
+
+/*
+int[] deadline = { 2, 1, 2, 1, 1 };
+int[] profit = { 100, 19, 27, 25, 15 };
+List<int> ans = GreedyTheory.JobSequencing(deadline, profit);
+Console.WriteLine(ans[0] + " " + ans[1]);
+*/
+
+/*
+int[] s1 = { 3, 2, 1, 1, 1 };
+int[] s2 = { 4, 3, 2 };
+int[] s3 = { 1, 1, 4, 1 };
+
+Console.WriteLine(GreedyTheory.MaxEqualSumOfThreeStack(s1, s2, s3));
+*/
+
+/*
+int k = 800;
+
+var res = GreedyTheory.FindMinNumOfCurrencyNotes(k);
+
+foreach (var el in res)
+{
+    Console.WriteLine(el.Key + " " + el.Value);
+}
+*/
+
+/*
+int[] prices = { 3, 2, 1, 4 };
+int k = 2;
+List<int> res = GreedyTheory.MinMaxCandy(prices, k);
+Console.WriteLine(res[0] + " " + res[1]);
+*/
+/*
+int[] price = { 10, 7, 19 };
+int K = 45;
+
+// int []price = { 7, 10, 4 };
+// int K = 100;
+Console.WriteLine(GreedyTheory.MaxStocks(price, K));
+*/
+
+/*
 int[] arr = { 3, 1, 7, 1 };
 int n = arr.Length;
 
 Console.WriteLine(GreedyTheory.MinElements(arr, n));
+*/
 
 /*
 int input = 28756;
