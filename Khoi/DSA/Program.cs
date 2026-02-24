@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using DSA.DynamicProgramming;
 using DSA.Graph;
 using DSA.Greedy;
 using DSA.LinkedList;
@@ -6,6 +7,79 @@ using DSA.PrefixSum;
 using DSA.Sort;
 using DSA.Tree;
 
+int n = 6;
+int[] dp = new int[n + 1];
+Array.Fill(dp, -1);
+
+Console.WriteLine(DynamicProgrammingTheory.MinSquares(n, dp));
+/*
+int[][] tri =
+[
+    [2],
+    [3, 9],
+    [1, 6, 7],
+];
+
+int[] memo = new int[10000];
+
+for (int i = 0; i < 10000; i++)
+{
+    memo[i] = -1;
+}
+
+Console.WriteLine(DynamicProgrammingTheory.MinimumSumPathInTriangle(tri, 0, 0, memo));
+
+*/
+/*
+int n = 6;
+
+Console.WriteLine(DynamicProgrammingTheory.CountValidParentheses(n));
+*/
+
+/*
+int n = 6;
+Console.WriteLine(DynamicProgrammingTheory.CalcNthCatalanNumber(n));
+*/
+
+/*
+int n = 11;
+int x = 2,
+    y = 3,
+    z = 5;
+
+int[] dp = new int[n + 1];
+for (var i = 0; i <= n; i++)
+    dp[i] = -1;
+
+Console.WriteLine(DynamicProgrammingTheory.MaximizeNumberOfSegmments(n, x, y, z, dp));
+*/
+
+/*
+int[] cost = { 16, 19, 10, 12, 18 };
+Console.WriteLine(DynamicProgrammingTheory.CostToReachTheTop(cost, 5));
+*/
+
+/*
+int n = 10;
+
+List<int> dp = new List<int>();
+for (var i = 0; i <= n; i++)
+    dp.Add(-1);
+
+Console.WriteLine(DynamicProgrammingTheory.Tribonacci(n, dp));
+*/
+
+/*
+int[] val = { 1, 2, 3 };
+int[] wt = { 4, 5, 1 };
+int W = 4;
+
+int res = DynamicProgrammingTheory.Knapsack(W, val, wt);
+
+Console.WriteLine(res);
+*/
+
+/*
 int[] mices = { 4, -4, 2 };
 int[] holes = { 4, 0, 5 };
 
@@ -13,6 +87,7 @@ int[] holes = { 4, 0, 5 };
 // from the function
 int minTime = GreedyTheory.AssignMousesToHoles(mices, holes);
 Console.WriteLine(minTime);
+*/
 
 /*
 int wall = 24,
