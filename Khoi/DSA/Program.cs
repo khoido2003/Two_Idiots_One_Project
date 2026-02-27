@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using DSA.Backtracking;
 using DSA.DynamicProgramming;
 using DSA.Graph;
 using DSA.Greedy;
@@ -7,11 +8,131 @@ using DSA.PrefixSum;
 using DSA.Sort;
 using DSA.Tree;
 
+/////////////////////////////////////////////////////////////////
+int N = 5;
+int[][] mat =
+[
+    [0, 1, 0, 1, 0],
+    [1, 0, 1, 1, 1],
+    [0, 1, 0, 0, 1],
+    [1, 1, 0, 0, 1],
+    [0, 1, 1, 1, 0],
+];
+
+var res = BacktrackingTheory.HamiltonianCycle(N, mat);
+
+foreach (var el in res)
+{
+    Console.Write(el + " ");
+}
+
+/*
+int V = 5;
+int[][] edges =
+[
+    [0, 1],
+    [0, 2],
+    [0, 3],
+    [1, 2],
+    [1, 4],
+    [2, 3],
+    [2, 4],
+    [3, 4],
+];
+
+int m = 3;
+
+Console.WriteLine(BacktrackingTheory.MColoringProblem(V, edges, m));
+*/
+
+/*
+int[] set = [3, 34, 4, 12, 5, 2];
+int sum = 7;
+
+var list = BacktrackingTheory.SubsetSumProblem(set, sum);
+
+foreach (var el in list)
+{
+    foreach (var e in el)
+    {
+        Console.Write(e + " ");
+    }
+
+    Console.WriteLine();
+}
+*/
+
+/*
+string a = "send";
+string b = "more";
+string sum = "money";
+
+Console.WriteLine(BacktrackingTheory.SolveCryptarithmetic(a, b, sum));
+*/
+
+/*
+int n = 4;
+
+var res = BacktrackingTheory.NthQueenProblem(n);
+
+foreach (var el in res)
+{
+    foreach (var e in el)
+    {
+        Console.Write(e + " ");
+    }
+    Console.WriteLine();
+}
+*/
+
+/*
+int[][] matrix =
+[
+    [1, 0, 0, 0],
+    [1, 1, 0, 1],
+    [1, 1, 0, 0],
+    [0, 1, 1, 1],
+];
+
+var res = BacktrackingTheory.RatInMaze(matrix);
+foreach (var el in res)
+{
+    Console.Write(el + " ");
+}
+*/
+
+/*
+int n = 5;
+int[][] res = BacktrackingTheory.KnightTour(n);
+
+for (int i = 0; i < res.Length; i++)
+{
+    for (int j = 0; j < res[i].Length; j++)
+    {
+        Console.Write(res[i][j] + " ");
+    }
+    Console.WriteLine();
+}
+*/
+
+/*
+string s = "ABC";
+List<string> res = BacktrackingTheory.CharPermutation(s);
+foreach (var el in res)
+{
+    Console.Write(el + "  ");
+}
+*/
+
+/*
 int n = 6;
 int[] dp = new int[n + 1];
 Array.Fill(dp, -1);
 
+
 Console.WriteLine(DynamicProgrammingTheory.MinSquares(n, dp));
+*/
+
 /*
 int[][] tri =
 [
