@@ -1,12 +1,12 @@
 package main
 
 import (
-	twopointer "Dat/DSA/TwoPointer"
+	str "Dat/DSA/String"
 	"fmt"
 )
 
 func main() {
-	s, t := "abc", "ahbgdc"
-	ans := twopointer.IsSubsequence(s, t)
+	num1 := "PAYPALISHIRING"
+	ans := str.Convert(num1, 4)
 	fmt.Println(ans)
 }
