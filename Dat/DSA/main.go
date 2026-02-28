@@ -1,12 +1,11 @@
 package main
 
 import (
-	str "Dat/DSA/String"
+	array "Dat/DSA/Array"
 	"fmt"
 )
 
 func main() {
-	num1 := "PAYPALISHIRING"
-	ans := str.Convert(num1, 4)
+	ans := array.GenerateMatrix(3)
 	fmt.Println(ans)
 }
