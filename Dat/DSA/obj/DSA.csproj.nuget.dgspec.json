@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\leetcode\\Two_Idiots_One_Project\\Dat\\DSA\\DSA.csproj": {}
+    "d:\\Project\\leetcode\\Two_Idiots_One_Project\\Dat\\DSA\\DSA.csproj": {}
   },
   "projects": {
-    "D:\\Project\\leetcode\\Two_Idiots_One_Project\\Dat\\DSA\\DSA.csproj": {
+    "d:\\Project\\leetcode\\Two_Idiots_One_Project\\Dat\\DSA\\DSA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\leetcode\\Two_Idiots_One_Project\\Dat\\DSA\\DSA.csproj",
+        "projectUniqueName": "d:\\Project\\leetcode\\Two_Idiots_One_Project\\Dat\\DSA\\DSA.csproj",
         "projectName": "DSA",
-        "projectPath": "D:\\Project\\leetcode\\Two_Idiots_One_Project\\Dat\\DSA\\DSA.csproj",
+        "projectPath": "d:\\Project\\leetcode\\Two_Idiots_One_Project\\Dat\\DSA\\DSA.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\leetcode\\Two_Idiots_One_Project\\Dat\\DSA\\obj\\",
+        "outputPath": "d:\\Project\\leetcode\\Two_Idiots_One_Project\\Dat\\DSA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
