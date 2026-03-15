@@ -1,7 +1,5 @@
 package array
 
-import "container/heap"
-
 type MinHeap []int
 
 func (h MinHeap) Len() int {
