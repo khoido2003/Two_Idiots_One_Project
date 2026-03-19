@@ -9,6 +9,94 @@ using DSA.Sort;
 using DSA.Tree;
 
 /////////////////////////////////////////////////////////////////
+
+SortPractice sortPractice = new();
+
+int[] nums = [3, 6, 9, 1];
+
+int res = sortPractice.MaximumGap(nums);
+
+Console.WriteLine(res);
+
+/*
+int[] nums1 = [1, 2, 3, 0, 0, 0];
+int m = 3;
+int[] nums2 = [2, 5, 6];
+int n = 3;
+
+sortPractice.Merge(nums1, m, nums2, n);
+
+foreach (var el in nums1)
+{
+    Console.Write(el + " ");
+}
+*/
+
+/*
+int[][] intervals =
+[
+    [1, 4],
+    [0, 4],
+];
+
+var res = sortPractice.Merge(intervals);
+
+foreach (var ls in res)
+{
+    foreach (var el in ls)
+    {
+        Console.Write(el + " ");
+    }
+    Console.WriteLine();
+}
+*/
+
+/*
+ 
+string[] strs = ["eat", "tea", "tan", "ate", "nat", "bat"];
+
+var res = sortPractice.GroupAnagrams(strs);
+
+foreach (var ls in res)
+{
+    foreach (var el in ls)
+    {
+        Console.Write(el + " ");
+    }
+    Console.WriteLine();
+}
+*/
+
+/*
+int[] nums = [1, 1, 2];
+var res = sortPractice.PermuteUnique(nums);
+
+foreach (var ls in res)
+{
+    foreach (var el in ls)
+    {
+        Console.Write(el + " ");
+    }
+    Console.WriteLine();
+}
+
+*/
+
+//Console.WriteLine(sortPractice.ThreeSumClosest(nums, 1));
+/*
+var res = sortPractice.ThreeSum(nums);
+
+foreach (var ls in res)
+{
+    foreach (var el in ls)
+    {
+        Console.Write(el + " ");
+    }
+    Console.WriteLine();
+}
+*/
+
+/*
 int N = 5;
 int[][] mat =
 [
@@ -25,6 +113,8 @@ foreach (var el in res)
 {
     Console.Write(el + " ");
 }
+
+*/
 
 /*
 int V = 5;

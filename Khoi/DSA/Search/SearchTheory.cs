@@ -29,5 +29,49 @@ namespace DSA.LinkedList
 
             return false;
         }
+
+        public static int LowerBound(int[] arr, int target)
+        {
+            int left = 0;
+            int right = arr.Length;
+
+            while (left < right)
+            {
+                int mid = left + (right - left) / 2;
+
+                if (arr[mid] < target)
+                {
+                    left = mid + 1;
+                }
+                else
+                {
+                    right = mid;
+                }
+            }
+
+            return left;
+        }
+
+        public static int UpperBound(int[] arr, int target)
+        {
+            int left = 0;
+            int right = arr.Length;
+
+            while (left < right)
+            {
+                int mid = left + (right - left) / 2;
+
+                if (arr[mid] <= target)
+                {
+                    left = mid + 1;
+                }
+                else
+                {
+                    right = mid;
+                }
+            }
+
+            return left;
+        }
     }
 }
