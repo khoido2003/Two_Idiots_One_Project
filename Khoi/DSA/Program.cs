@@ -7,9 +7,38 @@ using DSA.LinkedList;
 using DSA.PrefixSum;
 using DSA.Sort;
 using DSA.Tree;
+using DSA.TwoPointer;
 
 /////////////////////////////////////////////////////////////////
 
+TwoPointerPractice twoPointerPractice = new();
+
+string s = "a good   example";
+
+Console.WriteLine(twoPointerPractice.ReverseWords(s));
+
+/*
+int[] a = [1, 3, 2];
+
+twoPointerPractice.NextPermutation(a);
+
+foreach (int el in a)
+{
+    Console.Write(el + " ");
+}
+
+*/
+
+/*
+int[] height = [1, 8, 6, 2, 5, 4, 8, 3, 7];
+
+Console.WriteLine(twoPointerPractice.MaxArea(height));
+*/
+
+//string s = "babad";
+//Console.WriteLine(twoPointerPractice.LongestPalindrome(s));
+
+/*
 SortPractice sortPractice = new();
 
 int[] nums = [3, 6, 9, 1];
@@ -17,6 +46,7 @@ int[] nums = [3, 6, 9, 1];
 int res = sortPractice.MaximumGap(nums);
 
 Console.WriteLine(res);
+*/
 
 /*
 int[] nums1 = [1, 2, 3, 0, 0, 0];
