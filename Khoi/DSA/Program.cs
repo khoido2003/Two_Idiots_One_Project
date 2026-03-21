@@ -7,8 +7,126 @@ using DSA.LinkedList;
 using DSA.PrefixSum;
 using DSA.Sort;
 using DSA.Tree;
+using DSA.TwoPointer;
 
 /////////////////////////////////////////////////////////////////
+
+TwoPointerPractice twoPointerPractice = new();
+
+string s = "a good   example";
+
+Console.WriteLine(twoPointerPractice.ReverseWords(s));
+
+/*
+int[] a = [1, 3, 2];
+
+twoPointerPractice.NextPermutation(a);
+
+foreach (int el in a)
+{
+    Console.Write(el + " ");
+}
+
+*/
+
+/*
+int[] height = [1, 8, 6, 2, 5, 4, 8, 3, 7];
+
+Console.WriteLine(twoPointerPractice.MaxArea(height));
+*/
+
+//string s = "babad";
+//Console.WriteLine(twoPointerPractice.LongestPalindrome(s));
+
+/*
+SortPractice sortPractice = new();
+
+int[] nums = [3, 6, 9, 1];
+
+int res = sortPractice.MaximumGap(nums);
+
+Console.WriteLine(res);
+*/
+
+/*
+int[] nums1 = [1, 2, 3, 0, 0, 0];
+int m = 3;
+int[] nums2 = [2, 5, 6];
+int n = 3;
+
+sortPractice.Merge(nums1, m, nums2, n);
+
+foreach (var el in nums1)
+{
+    Console.Write(el + " ");
+}
+*/
+
+/*
+int[][] intervals =
+[
+    [1, 4],
+    [0, 4],
+];
+
+var res = sortPractice.Merge(intervals);
+
+foreach (var ls in res)
+{
+    foreach (var el in ls)
+    {
+        Console.Write(el + " ");
+    }
+    Console.WriteLine();
+}
+*/
+
+/*
+ 
+string[] strs = ["eat", "tea", "tan", "ate", "nat", "bat"];
+
+var res = sortPractice.GroupAnagrams(strs);
+
+foreach (var ls in res)
+{
+    foreach (var el in ls)
+    {
+        Console.Write(el + " ");
+    }
+    Console.WriteLine();
+}
+*/
+
+/*
+int[] nums = [1, 1, 2];
+var res = sortPractice.PermuteUnique(nums);
+
+foreach (var ls in res)
+{
+    foreach (var el in ls)
+    {
+        Console.Write(el + " ");
+    }
+    Console.WriteLine();
+}
+
+*/
+
+//Console.WriteLine(sortPractice.ThreeSumClosest(nums, 1));
+/*
+var res = sortPractice.ThreeSum(nums);
+
+foreach (var ls in res)
+{
+    foreach (var el in ls)
+    {
+        Console.Write(el + " ");
+    }
+    Console.WriteLine();
+}
+*/
+
+/*
 int N = 5;
 int[][] mat =
 [
@@ -25,6 +143,8 @@ foreach (var el in res)
 {
     Console.Write(el + " ");
 }
+
+*/
 
 /*
 int V = 5;
