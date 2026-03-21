@@ -7,11 +7,32 @@ using DSA.LinkedList;
 using DSA.PrefixSum;
 using DSA.SlidingWindow;
 using DSA.Sort;
+using DSA.Stack;
 using DSA.Tree;
 using DSA.TwoPointer;
 
 /////////////////////////////////////////////////////////////////
 
+StackPractice stackPractice = new();
+
+string[] tokens = ["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"];
+
+Console.WriteLine(stackPractice.EvalRPN(tokens));
+
+/*
+
+string path = "/a//b////c/d//././/..";
+
+Console.WriteLine(stackPractice.SimplifyPath(path));
+*/
+
+/*
+string s = "([])";
+
+Console.WriteLine(stackPractice.IsValid(s));
+*/
+
+/*
 SlidingWindowPractice slidingWindowPractice = new();
 
 int[] arr = [1, 2, 3, 4, 5];
@@ -23,6 +44,7 @@ foreach (var el in res)
 {
     Console.Write(el + " ");
 }
+*/
 
 /*
 string s = "aaabb";
