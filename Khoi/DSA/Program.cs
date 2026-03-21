@@ -5,17 +5,60 @@ using DSA.Graph;
 using DSA.Greedy;
 using DSA.LinkedList;
 using DSA.PrefixSum;
+using DSA.SlidingWindow;
 using DSA.Sort;
 using DSA.Tree;
 using DSA.TwoPointer;
 
 /////////////////////////////////////////////////////////////////
 
+SlidingWindowPractice slidingWindowPractice = new();
+
+int[] arr = [1, 2, 3, 4, 5];
+int k = 4;
+int x = 3;
+
+var res = slidingWindowPractice.FindClosestElements(arr, k, x);
+foreach (var el in res)
+{
+    Console.Write(el + " ");
+}
+
+/*
+string s = "aaabb";
+int k = 3;
+Console.WriteLine(slidingWindowPractice.LongestSubstring(s, k));
+*/
+
+/*
+int[] nums = [1, 0, 1, 1];
+int k = 1;
+
+Console.WriteLine(slidingWindowPractice.ContainsNearbyDuplicate(nums, k));
+*/
+
+/*
+string s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT";
+
+var res = slidingWindowPractice.FindRepeatedDnaSequences(s);
+
+foreach (var el in res)
+{
+    Console.WriteLine(el + " ");
+}
+*/
+
+//Console.WriteLine(slidingWindowPractice.LengthOfLongestSubstring(s));
+
+/*
 TwoPointerPractice twoPointerPractice = new();
+
 
 string s = "a good   example";
 
 Console.WriteLine(twoPointerPractice.ReverseWords(s));
+
+*/
 
 /*
 int[] a = [1, 3, 2];
