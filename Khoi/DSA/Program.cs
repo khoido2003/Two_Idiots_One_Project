@@ -5,6 +5,7 @@ using DSA.Graph;
 using DSA.Greedy;
 using DSA.LinkedList;
 using DSA.PrefixSum;
+using DSA.Queue;
 using DSA.SlidingWindow;
 using DSA.Sort;
 using DSA.Stack;
@@ -13,11 +14,71 @@ using DSA.TwoPointer;
 
 /////////////////////////////////////////////////////////////////
 
+QueuePractice queuePractice = new();
+
+int n = 6;
+int delay = 2;
+int forget = 4;
+
+Console.WriteLine(queuePractice.PeopleAwareOfSecret(n, delay, forget));
+
+
+/*
+int[ ]tickets = [2,3,2]; int k = 2;
+Console.WriteLine(queuePractice.TimeRequiredToBuy(tickets, k));
+*/
+
+/*
+int n = 5;
+int k = 2;
+Console.WriteLine(queuePractice.FindTheWinner(n, k));
+*/
+
+/*
+int[] students = [1, 1, 0, 0];
+int[] sandwiches = [0, 1, 0, 1];
+
+Console.WriteLine(queuePractice.CountStudents(students, sandwiches));
+*/
+
+/*
+int[] nums = [1, -1, -2, 4, -7, 3];
+int k = 2;
+
+Console.WriteLine(queuePractice.MaxResult(nums, k));
+*/
+
+/*
+int[] nums = [10, 1, 2, 4, 7, 2];
+int limit = 5;
+
+Console.WriteLine(queuePractice.LongestSubarray(nums, limit));
+*/
+
+/*
+int[] deck = [17, 13, 11, 2, 3, 5, 7];
+
+var res = queuePractice.DeckRevealedIncreasing(deck);
+
+foreach (var el in res)
+{
+    Console.Write(el + " ");
+}
+*/
+
+/*
+string s = "RRDDD";
+Console.WriteLine(queuePractice.PredictPartyVictory(s));
+*/
+
+/*
 StackPractice stackPractice = new();
 
 string[] tokens = ["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"];
 
+
 Console.WriteLine(stackPractice.EvalRPN(tokens));
+*/
 
 /*
 
