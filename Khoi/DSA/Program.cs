@@ -6,6 +6,7 @@ using DSA.Greedy;
 using DSA.LinkedList;
 using DSA.PrefixSum;
 using DSA.Queue;
+using DSA.Search;
 using DSA.SlidingWindow;
 using DSA.Sort;
 using DSA.Stack;
@@ -14,6 +15,32 @@ using DSA.TwoPointer;
 
 /////////////////////////////////////////////////////////////////
 
+SearchPractice searchPractice = new();
+int[][] matrix =
+[
+    [1, 3, 5, 7],
+    [10, 11, 16, 20],
+    [23, 30, 34, 60],
+];
+int target = 3;
+
+Console.WriteLine(searchPractice.SearchMatrix(matrix, target));
+
+/*
+int[] nums = [1, 3, 5, 6];
+int target = 5;
+
+Console.WriteLine(searchPractice.SearchInsert(nums, target));
+*/
+
+/*
+var res = searchPractice.SearchRange(nums, target);
+foreach (var el in res)
+{
+    Console.Write(el + " ");
+}
+*/
+/*
 QueuePractice queuePractice = new();
 
 int n = 6;
@@ -21,7 +48,7 @@ int delay = 2;
 int forget = 4;
 
 Console.WriteLine(queuePractice.PeopleAwareOfSecret(n, delay, forget));
-
+*/
 
 /*
 int[ ]tickets = [2,3,2]; int k = 2;

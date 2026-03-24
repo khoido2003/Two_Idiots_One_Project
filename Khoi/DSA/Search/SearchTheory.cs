@@ -1,4 +1,4 @@
-namespace DSA.LinkedList
+namespace DSA.Search
 {
     public class SearchTheory
     {
