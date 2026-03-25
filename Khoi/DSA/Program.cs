@@ -15,6 +15,88 @@ using DSA.TwoPointer;
 
 /////////////////////////////////////////////////////////////////
 
+GraphPractice graphPractice = new();
+
+int[][] graph =
+[
+    [1, 2, 3],
+    [0, 2],
+    [0, 1, 3],
+    [0, 2],
+];
+Console.WriteLine(graphPractice.IsBipartite(graph));
+
+/*
+int[][] isConnected =
+[
+    [1, 1, 0],
+    [1, 1, 0],
+    [0, 0, 1],
+];
+
+Console.WriteLine(graphPractice.FindCircleNum(isConnected));
+*/
+
+/*
+IList<IList<string>> equations =
+[
+    ["a", "b"],
+    ["b", "c"],
+    ["bc", "cd"],
+];
+double[] values = [1.5, 2.5, 5.0];
+IList<IList<string>> queries =
+[
+    ["a", "c"],
+    ["c", "b"],
+    ["bc", "cd"],
+    ["cd", "bc"],
+];
+
+var res = graphPractice.CalcEquation(equations, values, queries);
+
+foreach (var el in res)
+{
+    Console.Write(el.ToString("F5") + " ");
+}
+*/
+
+/*
+int n = 4;
+int[][] edges =
+[
+    [1, 0],
+    [1, 2],
+    [1, 3],
+];
+
+var res = graphPractice.FindMinHeightTrees(n, edges);
+foreach (var el in res)
+{
+    Console.Write(el + " ");
+}
+*/
+
+/*
+int numCourses = 4;
+int[][] prerequisites =
+[
+    [1, 0],
+    [2, 0],
+    [3, 1],
+    [3, 2],
+];
+
+var res = graphPractice.FindOrder(numCourses, prerequisites);
+foreach (var el in res)
+{
+    Console.Write(el + " ");
+}
+
+*/
+//Console.WriteLine(graphPractice.CanFinish(numCourses, prerequisites));
+
+/*
 SearchPractice searchPractice = new();
 int[][] matrix =
 [
@@ -25,6 +107,7 @@ int[][] matrix =
 int target = 3;
 
 Console.WriteLine(searchPractice.SearchMatrix(matrix, target));
+*/
 
 /*
 int[] nums = [1, 3, 5, 6];

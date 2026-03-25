@@ -291,7 +291,7 @@ namespace DSA.Search
             }
         }
 
-        public int Search(int[] nums, int target)
+        public int Search1(int[] nums, int target)
         {
             List<(int index, int value)> list = new();
 
