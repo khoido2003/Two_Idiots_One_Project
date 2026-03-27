@@ -15,6 +15,108 @@ using DSA.TwoPointer;
 
 /////////////////////////////////////////////////////////////////
 
+BacktrackingPractice backtrackingPractice = new();
+
+char[][] board =
+[
+    ['A', 'B', 'C', 'E'],
+    ['S', 'F', 'C', 'S'],
+    ['A', 'D', 'E', 'E'],
+];
+string word = "ABCCED";
+
+Console.WriteLine(backtrackingPractice.Exist(board, word));
+
+/*
+int[] nums = [1, 2, 3];
+
+var res = backtrackingPractice.Subsets(nums);
+
+foreach (var arr in res)
+{
+    foreach (var el in arr)
+    {
+        Console.Write(el + " ");
+    }
+
+    Console.WriteLine();
+}
+*/
+
+/*
+int n = 4,
+    k = 2;
+
+var res = backtrackingPractice.Combine(n, k);
+
+foreach (var arr in res)
+{
+    foreach (var el in arr)
+    {
+        Console.Write(el + " ");
+    }
+
+    Console.WriteLine();
+}
+*/
+
+/*
+int[] nums = [1, 1, 2];
+
+var res = backtrackingPractice.PermuteUnique(nums);
+
+foreach (var arr in res)
+{
+    foreach (var el in arr)
+    {
+        Console.Write(el + " ");
+    }
+
+    Console.WriteLine();
+}
+
+*/
+
+/*
+int[] candidates = [2, 3, 6, 7];
+int target = 7;
+
+var res = backtrackingPractice.CombinationSum(candidates, target);
+
+foreach (var arr in res)
+{
+    foreach (var el in arr)
+    {
+        Console.Write(el + " ");
+    }
+
+
+    Console.WriteLine();
+}
+*/
+
+/*
+int n = 3;
+var res = backtrackingPractice.GenerateParenthesis(n);
+
+foreach (string el in res)
+{
+    Console.Write(el + " ");
+}
+
+*/
+
+/*
+string digits = "23";
+var res = backtrackingPractice.LetterCombinations(digits);
+
+foreach (string el in res)
+{
+    Console.Write(el + " ");
+}
+*/
+
+/*
 GraphPractice graphPractice = new();
 
 int[][] graph =
@@ -25,6 +127,7 @@ int[][] graph =
     [0, 2],
 ];
 Console.WriteLine(graphPractice.IsBipartite(graph));
+*/
 
 /*
 int[][] isConnected =
