@@ -15,6 +15,43 @@ using DSA.TwoPointer;
 
 /////////////////////////////////////////////////////////////////
 
+DynamicProgrammingPractice dp = new();
+string s1 = "aabcc",
+    s2 = "dbbca",
+    s3 = "aadbbcbcac";
+
+Console.WriteLine(dp.IsInterleave(s1, s2, s3));
+/*
+string s = "12";
+
+Console.WriteLine(dp.NumDecodings(s));
+*/
+
+/*
+int[][] grid =
+[
+    [1, 3, 1],
+    [1, 5, 1],
+    [4, 2, 1],
+];
+
+Console.WriteLine(dp.MinPathSum(grid));
+*/
+
+/*
+int[] nums = [2, 3, 1, 1, 4];
+
+Console.WriteLine(dp.CanJump(nums));
+*/
+
+/*
+string s = "babad";
+string res = dp.LongestPalindrome(s);
+
+Console.WriteLine(res);
+*/
+
+/*
 BacktrackingPractice backtrackingPractice = new();
 
 char[][] board =
@@ -26,6 +63,7 @@ char[][] board =
 string word = "ABCCED";
 
 Console.WriteLine(backtrackingPractice.Exist(board, word));
+*/
 
 /*
 int[] nums = [1, 2, 3];
